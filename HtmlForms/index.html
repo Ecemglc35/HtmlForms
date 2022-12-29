@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--Ecem Gulec-991692324 -->
+<html lang="en">
+<head>
+    <title>Ecem Gulec</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="parent">
+        <header><h4> Ecem Gulec </h4></header>
+        <nav>
+            <p>Personal Information</p>
+            <form method="post" action="" name="form1" onsubmit="alertBox();" >
+                <label>First name: </label><br> <input type="text" name="fname" value="Ecem" id="fname" required> <br><br>
+                <label>Last name: </label><br> <input type="text" name="lname" value="Gulec" autofocus required> <br><br>
+                <label>Student number: </label><br> <input type="number" name="stdnum" value="991692324"> <br><br>
+                <label>Sheridan email:</label><br> <input type="email" name="email" value="gulec@sheridancollege.ca">
+        </nav>
+        <section>
+            <p>My Sheridan Experience</p>
+            <label>Start Date:</label><br><input type="date" name="sdate" ><br><br>
+            <label>Previous years of post-secondary experience:</label><br><input type="number" value="0"><br><br>
+            <label>Campus:</label> <br> 
+            <select name="campus">
+                <option value="Davis">Davis
+                <option value="Trafalgar">Trafalgar
+                <option value="Hazel McCallion">Hazel McCallion
+            </select>
+        </section>
+        <article>
+            <p>Financial data</p>
+            <label>Amount of money received(in CAD):</label><br><input type="number" name="money" value="0" min="0" > <br> <br>
+            <label>Money Source:</label> <br><input type="checkbox" name="source" value="Scholarship">Scholarship <br>
+            <input type="checkbox" name="source" value="RESP">RESP <br>
+            <input type="checkbox" name="source" value="Bursary">Bursary <br>
+            <input type="checkbox" name="source" value="OSAP">OSAP <br>
+            <input type="checkbox" name="source" value="Loan">Loan <br>
+            <input type="checkbox" name="source" value="Other">Other <br>
+        </article>
+        <aside>
+            <p>Comments</p>
+            <label>Comment Text Area (optional):</label> <br> <textarea name="comments" cols="130" rows="5" placeholder="You can enter your comments here."></textarea>
+        </aside>
+        <footer>
+            <input type="submit">
+            <input type="reset">
+            </form>
+        </footer>
+
+    </div>
+    <script>
+       function alertBox(){
+        var firstName=document.forms.form1.fname.value;
+        var lastName=document.forms.form1.lname.value;
+        var stdNumber=document.forms.form1.stdnum.value;
+        alert("Name: "+ firstName +" "+ lastName +" \nStudent Number: "+ stdNumber )
+       }
+    </script>
+</body>
+</html>

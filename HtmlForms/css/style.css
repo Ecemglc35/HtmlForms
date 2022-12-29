@@ -1,0 +1,45 @@
+/*Ecem Gulec-991692324 */
+body{
+    background-color: rgb(208, 107, 40);
+}
+.parent{
+    display: grid;
+    grid-template-areas: "h h"
+                         "n s"
+                         "n ar"
+                         "as as"
+                         "f f";
+    border: 3px solid green;
+    margin: 10px;
+}
+.parent>* {
+    border: 2px solid green;
+   padding-left: 20px;
+}
+header{
+    grid-area: h;
+    text-align: center;
+}
+nav{
+    grid-area: n;
+}
+section{
+    grid-area: s;
+    padding-bottom: 20px;
+}
+article{
+    grid-area: ar;
+    padding-bottom: 20px;
+}
+aside{
+    grid-area: as;
+    padding-bottom: 10px;
+}
+footer{
+    grid-area: f;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+p{
+    font-weight: bold;
+}
